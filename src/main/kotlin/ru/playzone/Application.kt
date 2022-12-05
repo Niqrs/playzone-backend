@@ -16,7 +16,7 @@ fun main() {
 //    val config = HikariConfig("hikari.properties")
 //    val dataSource = HikariDataSource(config)
     Database.connect(
-        url = "jdbc:postgresql://postgres:containers-us-west-100.railway.app:5597/railway",
+        url = "jdbc:postgresql://containers-us-west-100.railway.app:5597/railway",
         driver = "org.postgresql.Driver",
         user = "postgres",
         password = "Jcj4YRHe85XolHE1JSp3"
