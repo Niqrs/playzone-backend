@@ -12,7 +12,7 @@ import ru.playzone.features.login.configureLoginRouting
 import ru.playzone.features.register.configureRegisterRouting
 import ru.playzone.plugins.*
 
-fun main() {
+fun main() { //It should work on the server but it is not
     val config = HikariConfig("hikari.properties")
     val dataSource = HikariDataSource(config)
     Database.connect(dataSource)
