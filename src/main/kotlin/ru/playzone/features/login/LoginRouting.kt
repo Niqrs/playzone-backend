@@ -13,10 +13,9 @@ import java.util.*
 fun Application.configureLoginRouting() {
 
     routing {
-        get("/login") {
-//            val loginController = LoginController(call)
-//            loginController.performLogin()
-            call.respondText("Hello, Login!")
+        post("/login") {
+            val loginController = LoginController(call)
+            loginController.performLogin()
         }
     }
 }

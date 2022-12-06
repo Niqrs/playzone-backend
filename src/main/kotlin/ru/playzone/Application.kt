@@ -15,16 +15,7 @@ import ru.playzone.plugins.*
 fun main() {
     val config = HikariConfig("hikari.properties")
     val dataSource = HikariDataSource(config)
-    Database.connect(
-        dataSource
-//        url = "jdbc:postgresql://containers-us-west-100.railway.app:5597/railway",
-//        driver = "org.postgresql.Driver",
-//        user = "postgres",
-//        password = "Jcj4YRHe85XolHE1JSp3"
-    )
-    repeat(10) {
-        println("TEST1")
-    }
+    Database.connect(dataSource)
     embeddedServer(Netty, port = System.getenv("PORT").toInt(), module = Application::applicationModule).start(wait = true)
 }
 
