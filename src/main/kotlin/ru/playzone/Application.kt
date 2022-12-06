@@ -22,7 +22,9 @@ fun main() {
 //        user = "postgres",
 //        password = "Jcj4YRHe85XolHE1JSp3"
     )
-
+    repeat(10) {
+        println("TEST1")
+    }
     embeddedServer(Netty, port = System.getenv("PORT").toInt(), module = Application::applicationModule).start(wait = true)
 }
 
